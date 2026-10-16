@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy-to-Let Tax Calculator — Section 24 vs Limited Company & Schedule E | AI Money Tools</title>
+  <meta name="description" content="See your real after-tax landlord profit. UK: Section 24 mortgage-interest restriction, personal vs limited company compared. US: Schedule E with 27.5-year depreciation modelled.">
+  <meta name="keywords" content="section 24 calculator, buy to let tax calculator, limited company buy to let, schedule e rental income, landlord tax">
+  <link rel="canonical" href="https://aimoneytools.pro/tools/buy-to-let-analyzer.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#060818">
+  <meta property="og:site_name" content="AI Money Tools">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Buy-to-Let Tax Calculator — Section 24 vs Limited Company & Schedule E | AI Money Tools">
+  <meta property="og:description" content="See your real after-tax landlord profit. UK: Section 24 mortgage-interest restriction, personal vs limited company compared. US: Schedule E with 27.5-year depreciation modelled.">
+  <meta property="og:url" content="https://aimoneytools.pro/tools/buy-to-let-analyzer.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Buy-to-Let Tax Calculator — Section 24 vs Limited Company & Schedule E | AI Money Tools">
+  <meta name="twitter:description" content="See your real after-tax landlord profit. UK: Section 24 mortgage-interest restriction, personal vs limited company compared. US: Schedule E with 27.5-year depreciation modelled.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23818cf8%22/><text y=%2272%22 x=%2250%22 text-anchor=%22middle%22 font-size=%2260%22>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- ============ GOOGLE ADSENSE ============
+       STEP 1: Replace ca-pub-XXXXXXXXXXXXXXXX with your AdSense publisher ID.
+       STEP 2: Remove the comment markers around the script below.
+       (Keep it commented out until your AdSense account is approved.)
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  ============================================ -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Buy-to-Let Property Analyzer", "url": "https://aimoneytools.pro/tools/buy-to-let-analyzer.html", "description": "See your real after-tax landlord profit. UK: Section 24 mortgage-interest restriction, personal vs limited company compared. US: Schedule E with 27.5-year depreciation modelled.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "provider": {"@type": "Organization", "name": "AI Money Tools", "url": "https://aimoneytools.pro"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aimoneytools.pro/"}, {"@type": "ListItem", "position": 2, "name": "Lifestyle", "item": "https://aimoneytools.pro/index.html#lifestyle"}, {"@type": "ListItem", "position": 3, "name": "Buy-to-Let Property Analyzer", "item": "https://aimoneytools.pro/tools/buy-to-let-analyzer.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Section 24?", "acceptedAnswer": {"@type": "Answer", "text": "The UK rule (fully in force since April 2020) that stops individual landlords deducting mortgage interest from rental income, replacing it with a 20% tax credit. It mainly hurts higher-rate taxpayers with leveraged properties — exactly what the personal column of this calculator shows."}}, {"@type": "Question", "name": "Should I buy through a limited company?", "acceptedAnswer": {"@type": "Answer", "text": "Often yes for new purchases by higher-rate taxpayers with mortgages, because interest stays deductible and corporation tax starts at 19%. Often no for basic-rate or unleveraged landlords once dividend tax, dearer mortgages and admin are counted. Moving existing properties in triggers CGT and stamp duty — get advice first."}}, {"@type": "Question", "name": "How does rental depreciation work in the US?", "acceptedAnswer": {"@type": "Answer", "text": "Residential buildings depreciate straight-line over 27.5 years — purchase price minus land value, divided by 27.5, deducted every year regardless of cash spent. It's why profitable rentals frequently show little or no taxable income."}}, {"@type": "Question", "name": "Can rental losses reduce my salary tax?", "acceptedAnswer": {"@type": "Answer", "text": "US: up to $25,000 of passive rental losses can offset other income if you actively participate and MAGI is under $100,000 (phasing out to $150,000); the rest carries forward. UK: rental losses only carry forward against future rental profits."}}, {"@type": "Question", "name": "What happens to depreciation when I sell?", "acceptedAnswer": {"@type": "Answer", "text": "The IRS recaptures it: accumulated depreciation is taxed at up to 25% on sale, separate from capital gains. A 1031 like-kind exchange defers both; holding until death currently erases them via the step-up in basis."}}]}</script>
+</head>
+<body data-region="uk">
+<div class="orbs" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="../index.html" aria-label="AI Money Tools home">
+      <span class="logo-mark">⚡</span> AI&nbsp;Money&nbsp;Tools
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html#tools">All Tools</a>
+      <a href="../index.html#finance">Finance</a>
+      <a href="../index.html#legal">Legal &amp; Business</a>
+      <a href="../index.html#lifestyle" class="active">Lifestyle</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="region-toggle" role="group" aria-label="Choose your country">
+        <button type="button" data-set-region="uk" aria-label="United Kingdom">🇬🇧 UK</button>
+        <button type="button" data-set-region="us" aria-label="United States">🇺🇸 USA</button>
+      </div>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+<div class="container crumbs" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a><span>›</span><a href="../index.html#lifestyle">Lifestyle</a><span>›</span>Buy-to-Let Property Analyzer
+</div>
+
+<section class="tool-hero container">
+  <span class="eyebrow">🌿 Lifestyle · 100% free · No sign-up</span>
+  <h1>Buy-to-Let Tax Analyzer — Section 24 &amp; Schedule E</h1>
+  <p class="lede">Rental profit on paper and profit after tax are different animals. UK landlords face the Section 24 interest restriction — this analyzer shows your tax owning personally vs through a limited company, side by side. US landlords get the Schedule E treatment, including the 27.5-year depreciation deduction that often shelters most of the cash flow.</p>
+  <p class="region-note">🌍 Showing <strong>&nbsp;<span class="flag-uk">🇬🇧 UK</span><span class="flag-us">🇺🇸 US</span>&nbsp;</strong> rules — switch country with the toggle in the header.</p>
+</section>
+
+<aside class="ad-slot compact" aria-label="Advertisement">
+  <div class="ad-box">
+    <!-- ADSENSE UNIT (top-of-tool): after approval, delete the placeholder span below and
+         uncomment this ad unit, replacing the client & slot IDs with your own.
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <span>Advertisement</span>
+  </div>
+</aside>
+
+<div class="container">
+  <div class="tool-shell glass">
+    <h2 class="panel-title">Calculate after-tax rental profit</h2>
+    <p class="panel-sub">Annual figures. UK comparison assumes profits retained in the company (extraction adds dividend tax).</p>
+
+<form onsubmit="return false" autocomplete="off">
+  <div class="form-grid">
+    <div class="field"><label for="bt-rent">Annual rental income</label>
+      <div class="input-wrap"><span class="sym" data-sym>£</span><input type="number" id="bt-rent" value="16800" min="0" step="100"></div></div>
+    <div class="field"><label for="bt-int">Annual mortgage interest</label>
+      <div class="input-wrap"><span class="sym" data-sym>£</span><input type="number" id="bt-int" value="7500" min="0" step="100"></div></div>
+    <div class="field"><label for="bt-exp">Other allowable expenses</label>
+      <div class="input-wrap"><span class="sym" data-sym>£</span><input type="number" id="bt-exp" value="2500" min="0" step="100"></div>
+      <span class="hint">Repairs, insurance, agent fees, service charges</span></div>
+    <div class="field" data-r="uk"><label for="bt-uk-band">Your income tax band</label>
+      <select id="bt-uk-band"><option value="0.20">Basic rate (20%)</option><option value="0.40" selected>Higher rate (40%)</option><option value="0.45">Additional rate (45%)</option></select></div>
+    <div class="field" data-r="us"><label for="bt-us-price">Property purchase price</label>
+      <div class="input-wrap"><span class="sym">$</span><input type="number" id="bt-us-price" value="280000" min="0" step="1000"></div></div>
+    <div class="field" data-r="us"><label for="bt-us-land">Land share of price (%)</label>
+      <input type="number" id="bt-us-land" value="20" min="0" max="80" step="1">
+      <span class="hint">Only the building depreciates — land doesn't</span></div>
+    <div class="field" data-r="us"><label for="bt-us-rate">Marginal tax rate (%)</label>
+      <input type="number" id="bt-us-rate" value="24" min="0" max="50" step="1"></div>
+  </div>
+  <div class="actions"><button type="button" class="btn btn-grad" onclick="calcBTL()">Calculate after-tax profit</button></div>
+</form>
+<div class="results" id="res-btl" aria-live="polite"></div>
+
+  </div>
+</div>
+
+<aside class="ad-slot" aria-label="Advertisement">
+  <div class="ad-box">
+    <!-- ADSENSE UNIT (mid-content): after approval, delete the placeholder span below and
+         uncomment this ad unit, replacing the client & slot IDs with your own.
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <span>Advertisement</span>
+  </div>
+</aside>
+
+<section class="content-sec">
+  <div class="container content-prose">
+
+<h2>Why landlord tax is where deals are won and lost</h2>
+<p>Two landlords with identical properties can keep very different profits purely because of structure. The UK's Section 24 rules and the US depreciation system pull in opposite directions — one punishes leverage for individuals, the other rewards it.</p>
+<h3>🇬🇧 Section 24: the interest restriction</h3>
+<ul>
+<li>Since 2020, individual landlords <strong>cannot deduct mortgage interest</strong> from rental income. Instead they receive a flat <strong>20% tax credit</strong> on the interest.</li>
+<li>Basic-rate taxpayers are broadly unaffected; <strong>higher and additional-rate</strong> landlords are taxed on revenue they never received — effective tax rates on real profit can exceed 60%, or turn a cash profit into an after-tax loss.</li>
+<li><strong>Limited companies escape Section 24</strong>: interest is fully deductible and profits pay corporation tax (19% up to £50k, 25% above with marginal relief). The trade-offs: dividend tax on extraction, pricier mortgages, accounts and filing costs, and CGT + SDLT on moving existing properties in.</li>
+<li>Rule of thumb the calculator makes concrete: higher-rate taxpayers with meaningful leverage usually benefit from a company for <em>new</em> purchases; basic-rate, low-leverage landlords usually don't.</li>
+</ul>
+<h3>🇺🇸 Schedule E and the depreciation machine</h3>
+<ul>
+<li>Rentals report on <strong>Schedule E</strong>: rent minus operating expenses minus <strong>fully deductible</strong> mortgage interest.</li>
+<li>Then comes <strong>depreciation</strong> — the building's cost (excluding land) written off over 27.5 years. It's a non-cash deduction that frequently wipes out the taxable income on a cash-flowing property.</li>
+<li>Paper losses can offset other income up to <strong>$25,000/year</strong> for active participants (phasing out between $100k–$150k MAGI); excess losses carry forward.</li>
+<li>The deferred bill: depreciation is <strong>recaptured at up to 25% on sale</strong>, unless rolled into a 1031 exchange.</li>
+</ul>
+<h2>Before you decide structure</h2>
+<p>Model the full journey — purchase costs, annual tax (this tool), extraction or sale taxes — not just year one. And remember the comparison here shows retained company profits; your plans for the money change the answer.</p>
+
+  </div>
+</section>
+
+<section class="faq-sec" aria-labelledby="faq-h">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">FAQ</span><h2 id="faq-h">Common questions</h2></div>
+    <div class="faq-list">
+    <details class="faq-item glass">
+      <summary>What is Section 24?</summary>
+      <div class="faq-a"><p>The UK rule (fully in force since April 2020) that stops individual landlords deducting mortgage interest from rental income, replacing it with a 20% tax credit. It mainly hurts higher-rate taxpayers with leveraged properties — exactly what the personal column of this calculator shows.</p></div>
+    </details>
+    <details class="faq-item glass">
+      <summary>Should I buy through a limited company?</summary>
+      <div class="faq-a"><p>Often yes for new purchases by higher-rate taxpayers with mortgages, because interest stays deductible and corporation tax starts at 19%. Often no for basic-rate or unleveraged landlords once dividend tax, dearer mortgages and admin are counted. Moving existing properties in triggers CGT and stamp duty — get advice first.</p></div>
+    </details>
+    <details class="faq-item glass">
+      <summary>How does rental depreciation work in the US?</summary>
+      <div class="faq-a"><p>Residential buildings depreciate straight-line over 27.5 years — purchase price minus land value, divided by 27.5, deducted every year regardless of cash spent. It's why profitable rentals frequently show little or no taxable income.</p></div>
+    </details>
+    <details class="faq-item glass">
+      <summary>Can rental losses reduce my salary tax?</summary>
+      <div class="faq-a"><p>US: up to $25,000 of passive rental losses can offset other income if you actively participate and MAGI is under $100,000 (phasing out to $150,000); the rest carries forward. UK: rental losses only carry forward against future rental profits.</p></div>
+    </details>
+    <details class="faq-item glass">
+      <summary>What happens to depreciation when I sell?</summary>
+      <div class="faq-a"><p>The IRS recaptures it: accumulated depreciation is taxed at up to 25% on sale, separate from capital gains. A 1031 like-kind exchange defers both; holding until death currently erases them via the step-up in basis.</p></div>
+    </details>
+    </div>
+  </div>
+</section>
+
+<section class="related-sec" aria-labelledby="rel-h">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">Keep going</span><h2 id="rel-h">Related free tools</h2></div>
+    <div class="related-grid">
+      <a class="tool-card glass glass-hover" data-cat="lifestyle" href="real-estate-roi.html">
+        <span class="cat">Lifestyle</span>
+        <span class="t-ico" aria-hidden="true">🏘️</span>
+        <h3>Real Estate ROI Calculator</h3>
+        <p>Gross & net yield, cap rate, cash-on-cash return and the 1% rule — judge any rental deal in seconds.</p>
+        <span class="go">Open tool →</span>
+      </a>
+      <a class="tool-card glass glass-hover" data-cat="finance" href="stamp-duty-transfer-tax.html">
+        <span class="cat">Finance</span>
+        <span class="t-ico" aria-hidden="true">🧱</span>
+        <h3>Stamp Duty / Transfer Tax Calculator</h3>
+        <p>UK SDLT bands with first-time buyer relief and the +5% surcharge, or US transfer taxes + closing costs.</p>
+        <span class="go">Open tool →</span>
+      </a>
+      <a class="tool-card glass glass-hover" data-cat="finance" href="capital-gains-tax.html">
+        <span class="cat">Finance</span>
+        <span class="t-ico" aria-hidden="true">📈</span>
+        <h3>Capital Gains Tax Calculator</h3>
+        <p>UK 18%/24% CGT with the £3,000 exempt amount, or US short vs long-term rates with the 0/15/20% brackets.</p>
+        <span class="go">Open tool →</span>
+      </a>
+      <a class="tool-card glass glass-hover" data-cat="finance" href="tax-calculator.html">
+        <span class="cat">Finance</span>
+        <span class="t-ico" aria-hidden="true">🧾</span>
+        <h3>Income Tax Calculator</h3>
+        <p>UK PAYE (incl. Scotland) or US federal brackets + FICA. Full take-home pay breakdown for 2026.</p>
+        <span class="go">Open tool →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<aside class="ad-slot" aria-label="Advertisement">
+  <div class="ad-box">
+    <!-- ADSENSE UNIT (bottom): after approval, delete the placeholder span below and
+         uncomment this ad unit, replacing the client & slot IDs with your own.
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <span>Advertisement</span>
+  </div>
+</aside>
+
+<script>
+
+function calcBTL(){
+  var rent=AMT.num('bt-rent'), interest=AMT.num('bt-int'), exp=AMT.num('bt-exp'), out='';
+  if(AMT.region()==='uk'){
+    var rate=parseFloat(AMT.val('bt-uk-band'));
+    // Personal: Section 24 — no interest deduction, 20% credit instead
+    var taxableP=Math.max(0,rent-exp);
+    var taxP=Math.max(0, taxableP*rate - interest*0.20);
+    var profitP=rent-exp-interest-taxP;
+    // Limited company: interest fully deductible, CT 19% small profits (<£50k)
+    var profitPreCT=Math.max(0,rent-exp-interest);
+    var ct=profitPreCT*(profitPreCT>50000?0.25:0.19);
+    var profitC=profitPreCT-ct;
+    var effP=rent-exp-interest>0?taxP/(rent-exp-interest)*100:0;
+    out='<div class="res-grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">'
+      +'<div class="res-card'+(profitC>profitP?'':' hero-val')+'"><div class="lbl">👤 Personal ownership — after tax</div><div class="val '+(profitP<0?'bad':'')+'">'+(profitP<0?'−':'')+AMT.money(profitP)+'</div><div class="lbl" style="text-transform:none;letter-spacing:0;margin-top:6px">Tax '+AMT.money(taxP)+' · effective '+effP.toFixed(0)+'% of real profit</div></div>'
+      +'<div class="res-card'+(profitC>profitP?' hero-val':'')+'"><div class="lbl">🏢 Limited company — retained</div><div class="val">'+AMT.money(profitC)+'</div><div class="lbl" style="text-transform:none;letter-spacing:0;margin-top:6px">Corporation tax '+AMT.money(ct)+' at '+(profitPreCT>50000?'25%':'19%')+'</div></div></div>'
+      +'<table class="res-table"><tbody>'
+      +'<tr><td>Real economic profit (rent − expenses − interest)</td><td>'+AMT.money(rent-exp-interest)+'</td></tr>'
+      +'<tr><td>Personal: taxed on '+AMT.money(taxableP)+' at '+(rate*100)+'% minus 20% interest credit ('+AMT.money(interest*0.2)+')</td><td>'+AMT.money(taxP)+'</td></tr>'
+      +'<tr><td>Company: interest fully deductible before CT</td><td>'+AMT.money(ct)+'</td></tr>'
+      +'<tr class="total"><td>Annual advantage of '+(profitC>profitP?'company':'personal')+' structure</td><td>'+AMT.money(Math.abs(profitC-profitP))+'</td></tr></tbody></table>'
+      +'<div class="explain"><b>Section 24 in one line:</b> individual landlords can no longer deduct mortgage interest — they get only a 20% tax credit, so higher-rate taxpayers are taxed partly on profit that doesn\'t exist'+(profitP<0?' (here the personal structure actually loses money after tax)':'')+'. '
+      +'The company comparison assumes profits stay in the company — extracting them as dividends adds 8.75–39.35% dividend tax, and company mortgages cost ~0.5–1% more. Switching an existing property into a company triggers CGT and stamp duty, so the structure decision is best made before buying. Take advice for your full position.</div>';
+  } else {
+    var price=AMT.num('bt-us-price'), land=AMT.num('bt-us-land')/100, mrate=AMT.num('bt-us-rate')/100;
+    var dep=price*(1-land)/27.5;
+    var cash=rent-exp-interest;
+    var taxable=rent-exp-interest-dep;
+    var tax=taxable>0?taxable*mrate:0;
+    var after=cash-tax;
+    out='<div class="res-grid">'
+      +'<div class="res-card hero-val"><div class="lbl">After-tax cash profit</div><div class="val '+(after<0?'bad':'good')+'">'+(after<0?'−':'')+AMT.money(after)+'</div></div>'
+      +'<div class="res-card"><div class="lbl">Depreciation deduction</div><div class="val good">'+AMT.money(dep)+'</div></div>'
+      +'<div class="res-card"><div class="lbl">Taxable Schedule E '+(taxable<0?'loss':'income')+'</div><div class="val">'+(taxable<0?'−':'')+AMT.money(Math.abs(taxable))+'</div></div>'
+      +'<div class="res-card"><div class="lbl">Tax due</div><div class="val '+(tax>0?'bad':'good')+'">'+AMT.money(tax)+'</div></div></div>'
+      +'<table class="res-table"><tbody>'
+      +'<tr><td>Rental income</td><td>'+AMT.money(rent)+'</td></tr>'
+      +'<tr><td>− Operating expenses</td><td>−'+AMT.money(exp)+'</td></tr>'
+      +'<tr><td>− Mortgage interest (fully deductible)</td><td>−'+AMT.money(interest)+'</td></tr>'
+      +'<tr><td>− Depreciation: '+AMT.money(price*(1-land))+' building ÷ 27.5 yrs</td><td>−'+AMT.money(dep)+'</td></tr>'
+      +'<tr class="total"><td>Taxable income</td><td>'+(taxable<0?'−':'')+AMT.money(Math.abs(taxable))+'</td></tr></tbody></table>'
+      +'<div class="explain"><b>The depreciation effect:</b> you pocket '+AMT.money(cash)+' in cash but are taxed on '+(taxable<0?'nothing — a paper loss of '+AMT.money(-taxable)+' that can offset other income (up to $25,000 for active participants with MAGI under $100k, phasing out to $150k; otherwise it carries forward)':'only '+AMT.money(taxable))+'. '
+      +'The catch: depreciation is <b>recaptured at up to 25%</b> when you sell (a 1031 exchange defers it). Mortgage interest stays fully deductible for US rentals — there is no Section 24 equivalent.</div>';
+  }
+  document.getElementById('res-btl').innerHTML=out; AMT.show('res-btl');
+}
+document.addEventListener('regionchange',function(){document.querySelectorAll('[data-sym]').forEach(function(s){s.textContent=AMT.cur();}); if(document.getElementById('res-btl').classList.contains('show')) calcBTL();});
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-sym]').forEach(function(s){s.textContent=AMT.cur();});});
+
+</script>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="../index.html"><span class="logo-mark">⚡</span> AI&nbsp;Money&nbsp;Tools</a>
+        <p>Region-aware money, tax and legal calculators for the UK 🇬🇧 and USA 🇺🇸. Free to use, no sign-up, and every calculation runs privately in your browser.</p>
+      </div>
+      <div>
+        <h4>Finance tools</h4>
+        <ul>
+          <li><a href="../tools/tax-calculator.html">Income Tax Calculator</a></li>
+          <li><a href="../tools/mortgage-affordability.html">Mortgage Affordability</a></li>
+          <li><a href="../tools/retirement-planner.html">Retirement Planner</a></li>
+          <li><a href="../tools/capital-gains-tax.html">Capital Gains Tax</a></li>
+          <li><a href="../tools/debt-payoff-planner.html">Debt Payoff Planner</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <ul>
+          <li><a href="../tools/invoice-generator.html">Invoice Generator</a></li>
+          <li><a href="../tools/contract-generator.html">Contract Generator</a></li>
+          <li><a href="../tools/stamp-duty-transfer-tax.html">Stamp Duty Calculator</a></li>
+          <li><a href="../tools/budget-planner.html">Budget Planner</a></li>
+          <li><a href="../tools/freelance-rate-calculator.html">Freelance Rate Calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy-policy.html">Privacy policy</a></li>
+          <li><a href="../terms.html">Terms of use</a></li>
+          <li><a href="../disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer-strip">AI Money Tools provides general information and automated calculations only — not legal, tax, financial, investment or immigration advice. Figures are based on published 2026 UK (2026/27) and US (2025 &amp; 2026 tax year) rules and may change. Always confirm important decisions with a qualified professional in your jurisdiction.</p>
+    <div class="foot-legal">
+      <span>© 2026 AI Money Tools · aimoneytools.pro</span>
+      <span>Made for 🇬🇧 + 🇺🇸</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/taxdata.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

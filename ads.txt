@@ -1,0 +1,4 @@
+# Google AdSense — REQUIRED for monetisation.
+# After your AdSense account is approved, replace pub-0000000000000000
+# below with YOUR publisher ID (AdSense > Account > Account information).
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

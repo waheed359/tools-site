@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Property ROI Calculator — Yield, Cap Rate & Cash-on-Cash | AI Money Tools</title>
+  <meta name="description" content="Analyse any rental property: gross and net yield, cap rate, monthly cash flow and cash-on-cash return, with the US 1% rule and UK stamp duty included. Free and instant.">
+  <meta name="keywords" content="rental yield calculator, cap rate calculator, cash on cash return, real estate roi, 1% rule">
+  <link rel="canonical" href="https://aimoneytools.pro/tools/real-estate-roi.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#060818">
+  <meta property="og:site_name" content="AI Money Tools">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rental Property ROI Calculator — Yield, Cap Rate & Cash-on-Cash | AI Money Tools">
+  <meta property="og:description" content="Analyse any rental property: gross and net yield, cap rate, monthly cash flow and cash-on-cash return, with the US 1% rule and UK stamp duty included. Free and instant.">
+  <meta property="og:url" content="https://aimoneytools.pro/tools/real-estate-roi.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rental Property ROI Calculator — Yield, Cap Rate & Cash-on-Cash | AI Money Tools">
+  <meta name="twitter:description" content="Analyse any rental property: gross and net yield, cap rate, monthly cash flow and cash-on-cash return, with the US 1% rule and UK stamp duty included. Free and instant.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23818cf8%22/><text y=%2272%22 x=%2250%22 text-anchor=%22middle%22 font-size=%2260%22>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- ============ GOOGLE ADSENSE ============
+       STEP 1: Replace ca-pub-XXXXXXXXXXXXXXXX with your AdSense publisher ID.
+       STEP 2: Remove the comment markers around the script below.
+       (Keep it commented out until your AdSense account is approved.)
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  ============================================ -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Real Estate ROI Calculator", "url": "https://aimoneytools.pro/tools/real-estate-roi.html", "description": "Analyse any rental property: gross and net yield, cap rate, monthly cash flow and cash-on-cash return, with the US 1% rule and UK stamp duty included. Free and instant.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "provider": {"@type": "Organization", "name": "AI Money Tools", "url": "https://aimoneytools.pro"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aimoneytools.pro/"}, {"@type": "ListItem", "position": 2, "name": "Lifestyle", "item": "https://aimoneytools.pro/index.html#lifestyle"}, {"@type": "ListItem", "position": 3, "name": "Real Estate ROI Calculator", "item": "https://aimoneytools.pro/tools/real-estate-roi.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a good rental yield?", "acceptedAnswer": {"@type": "Answer", "text": "Gross yields of 5–8% are typical for solid UK regional and US midwest deals; prime London or coastal US cities often run 3–4% gross and rely on appreciation. Judge net yield (cap rate) and cash-on-cash rather than gross alone."}}, {"@type": "Question", "name": "What is the 1% rule in real estate?", "acceptedAnswer": {"@type": "Answer", "text": "A US screening heuristic: monthly rent should be at least 1% of the purchase price ($2,000 rent on a $200,000 home). Deals passing it usually cash-flow with conventional financing; it's a filter for further analysis, not a guarantee."}}, {"@type": "Question", "name": "Should I use interest-only or repayment for the analysis?", "acceptedAnswer": {"@type": "Answer", "text": "Model what you'd actually use. UK buy-to-let is predominantly interest-only (maximising cash flow, no equity build); US investment loans are typically amortising. The calculator supports both — compare them to see the trade-off."}}, {"@type": "Question", "name": "Does this include tax on the rental profit?", "acceptedAnswer": {"@type": "Answer", "text": "No — it measures the deal pre-tax, which is how cap rates are quoted. For the after-tax picture use the Buy-to-Let Analyzer, which applies UK Section 24 interest restriction or US Schedule E depreciation."}}, {"@type": "Question", "name": "Is negative cash flow ever acceptable?", "acceptedAnswer": {"@type": "Answer", "text": "Only as a conscious bet on appreciation or future rent growth, with reserves to fund the monthly loss. Many experienced investors simply refuse negative-cash-flow deals: the market owes you nothing on price."}}]}</script>
+</head>
+<body data-region="uk">
+<div class="orbs" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="../index.html" aria-label="AI Money Tools home">
+      <span class="logo-mark">⚡</span> AI&nbsp;Money&nbsp;Tools
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="../index.html#tools">All Tools</a>
+      <a href="../index.html#finance">Finance</a>
+      <a href="../index.html#legal">Legal &amp; Business</a>
+      <a href="../index.html#lifestyle" class="active">Lifestyle</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="region-toggle" role="group" aria-label="Choose your country">
+        <button type="button" data-set-region="uk" aria-label="United Kingdom">🇬🇧 UK</button>
+        <button type="button" data-set-region="us" aria-label="United States">🇺🇸 USA</button>
+      </div>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+<div class="container crumbs" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a><span>›</span><a href="../index.html#lifestyle">Lifestyle</a><span>›</span>Real Estate ROI Calculator
+</div>
+
+<section class="tool-hero container">
+  <span class="eyebrow">🌿 Lifestyle · 100% free · No sign-up</span>
+  <h1>Real Estate ROI Calculator — Yield, Cap Rate &amp; Cash-on-Cash</h1>
+  <p class="lede">One set of inputs, every metric investors actually use: gross and net yield, cap rate, monthly cash flow after the mortgage, and cash-on-cash return on the money you put in — plus the US 1% rule screen and UK purchase costs including the stamp duty surcharge.</p>
+  <p class="region-note">🌍 Showing <strong>&nbsp;<span class="flag-uk">🇬🇧 UK</span><span class="flag-us">🇺🇸 US</span>&nbsp;</strong> rules — switch country with the toggle in the header.</p>
+</section>
+
+<aside class="ad-slot compact" aria-label="Advertisement">
+  <div class="ad-box">
+    <!-- ADSENSE UNIT (top-of-tool): after approval, delete the placeholder span below and
+         uncomment this ad unit, replacing the client & slot IDs with your own.
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <span>Advertisement</span>
+  </div>
+</aside>
+
+<div class="container">
+  <div class="tool-shell glass">
+    <h2 class="panel-title">Analyse a rental property</h2>
+    <p class="panel-sub">Use realistic figures — vacancy and maintenance are where paper deals die.</p>
+
+<form onsubmit="return false" autocomplete="off">
+  <div class="form-grid">
+    <div class="field"><label for="re-price">Purchase price</label>
+      <div class="input-wrap"><span class="sym" data-sym>£</span><input type="number" id="re-price" value="250000" min="0" step="1000"></div></div>
+    <div class="field"><label for="re-rent">Monthly rent</label>
+      <div class="input-wrap"><span class="sym" data-sym>£</span><input type="number" id="re-rent" value="1400" min="0" step="10"></div></div>
+    <div class="field"><label for="re-costs">Monthly running costs</label>
+      <div class="input-wrap"><span class="sym" data-sym>£</span><input type="number" id="re-costs" value="250" min="0" step="10"></div>
+      <span class="hint">Insurance, maintenance, management, service charge</span></div>
+    <div class="field"><label for="re-vac">Vacancy allowance (%)</label><input type="number" id="re-vac" value="5" min="0" max="30" step="1"></div>
+    <div class="field"><label for="re-dep">Deposit / down payment (%)</label><input type="number" id="re-dep" value="25" min="0" max="100" step="1"></div>
+    <div class="field"><label for="re-rate">Mortgage rate (%)</label><input type="number" id="re-rate" value="5.2" min="0" max="15" step="0.05"></div>
+    <div class="field"><label for="re-io">Mortgage type</label>
+      <select id="re-io"><option value="io">Interest-only (typical BTL)</option><option value="repay">Repayment, 25 years</option></select></div>
+    <div class="field"><label for="re-buycosts">Other purchase costs</label>
+      <div class="input-wrap"><span class="sym" data-sym>£</span><input type="number" id="re-buycosts" value="3000" min="0" step="100"></div>
+      <span class="hint" data-r="uk">Legal + survey (stamp duty is added automatically)</span>
+      <span class="hint" data-r="us">Closing costs — typically 2–5% of price</span></div>
+  </div>
+  <div class="actions"><button type="button" class="btn btn-grad" onclick="calcROI()">Analyse deal</button></div>
+</form>
+<div class="results" id="res-roi" aria-live="polite"></div>
+
+  </div>
+</div>
+
+<aside class="ad-slot" aria-label="Advertisement">
+  <div class="ad-box">
+    <!-- ADSENSE UNIT (mid-content): after approval, delete the placeholder span below and
+         uncomment this ad unit, replacing the client & slot IDs with your own.
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <span>Advertisement</span>
+  </div>
+</aside>
+
+<section class="content-sec">
+  <div class="container content-prose">
+
+<h2>The four numbers that describe any rental deal</h2>
+<ol>
+<li><strong>Gross yield</strong> = annual rent ÷ price. The headline comparison number — but it ignores every cost, so never buy on it alone.</li>
+<li><strong>Net yield / cap rate</strong> = net operating income ÷ price. What the asset earns regardless of financing; the number professionals quote.</li>
+<li><strong>Cash flow</strong> = NOI − mortgage payment. The money that actually hits (or leaves) your bank account monthly.</li>
+<li><strong>Cash-on-cash return</strong> = annual cash flow ÷ cash invested. Your personal return on the deposit, taxes and fees you put in — the figure to compare against simply investing in an index fund.</li>
+</ol>
+<h3>Country-specific screens the calculator applies</h3>
+<ul>
+<li><strong>🇺🇸 The 1% rule:</strong> monthly rent ≥ 1% of purchase price is the classic quick filter — rarely met in prime coastal markets, common in the Midwest and South. Below 1%, cash flow usually depends on big down payments or rate drops.</li>
+<li><strong>🇬🇧 Lender stress test:</strong> buy-to-let lenders typically require rent to cover ~145% of the mortgage interest calculated at a stressed rate (~7%) — the table shows whether your deal passes.</li>
+<li><strong>🇬🇧 Purchase costs:</strong> the 5% additional-property stamp duty surcharge is added automatically — it routinely adds five figures to the cash required.</li>
+</ul>
+<h3>Where paper deals die</h3>
+<ul>
+<li><strong>Vacancy:</strong> even great properties sit empty between tenants — 5–8% of rent is a realistic allowance.</li>
+<li><strong>Maintenance:</strong> budget 1% of property value per year, more for older stock; boilers and roofs don't care about your spreadsheet.</li>
+<li><strong>Management:</strong> 8–12% of rent if you won't self-manage — include it even if you plan to, because your time isn't free.</li>
+<li><strong>Rate risk:</strong> on interest-only finance, every 1% rate rise cuts monthly cash flow by the loan × 1% ÷ 12.</li>
+</ul>
+
+  </div>
+</section>
+
+<section class="faq-sec" aria-labelledby="faq-h">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">FAQ</span><h2 id="faq-h">Common questions</h2></div>
+    <div class="faq-list">
+    <details class="faq-item glass">
+      <summary>What is a good rental yield?</summary>
+      <div class="faq-a"><p>Gross yields of 5–8% are typical for solid UK regional and US midwest deals; prime London or coastal US cities often run 3–4% gross and rely on appreciation. Judge net yield (cap rate) and cash-on-cash rather than gross alone.</p></div>
+    </details>
+    <details class="faq-item glass">
+      <summary>What is the 1% rule in real estate?</summary>
+      <div class="faq-a"><p>A US screening heuristic: monthly rent should be at least 1% of the purchase price ($2,000 rent on a $200,000 home). Deals passing it usually cash-flow with conventional financing; it's a filter for further analysis, not a guarantee.</p></div>
+    </details>
+    <details class="faq-item glass">
+      <summary>Should I use interest-only or repayment for the analysis?</summary>
+      <div class="faq-a"><p>Model what you'd actually use. UK buy-to-let is predominantly interest-only (maximising cash flow, no equity build); US investment loans are typically amortising. The calculator supports both — compare them to see the trade-off.</p></div>
+    </details>
+    <details class="faq-item glass">
+      <summary>Does this include tax on the rental profit?</summary>
+      <div class="faq-a"><p>No — it measures the deal pre-tax, which is how cap rates are quoted. For the after-tax picture use the Buy-to-Let Analyzer, which applies UK Section 24 interest restriction or US Schedule E depreciation.</p></div>
+    </details>
+    <details class="faq-item glass">
+      <summary>Is negative cash flow ever acceptable?</summary>
+      <div class="faq-a"><p>Only as a conscious bet on appreciation or future rent growth, with reserves to fund the monthly loss. Many experienced investors simply refuse negative-cash-flow deals: the market owes you nothing on price.</p></div>
+    </details>
+    </div>
+  </div>
+</section>
+
+<section class="related-sec" aria-labelledby="rel-h">
+  <div class="container">
+    <div class="sec-head"><span class="kicker">Keep going</span><h2 id="rel-h">Related free tools</h2></div>
+    <div class="related-grid">
+      <a class="tool-card glass glass-hover" data-cat="lifestyle" href="buy-to-let-analyzer.html">
+        <span class="cat">Lifestyle</span>
+        <span class="t-ico" aria-hidden="true">🔑</span>
+        <h3>Buy-to-Let Property Analyzer</h3>
+        <p>After-tax landlord profit: UK Section 24 (personal vs limited company) or US Schedule E with depreciation.</p>
+        <span class="go">Open tool →</span>
+      </a>
+      <a class="tool-card glass glass-hover" data-cat="finance" href="stamp-duty-transfer-tax.html">
+        <span class="cat">Finance</span>
+        <span class="t-ico" aria-hidden="true">🧱</span>
+        <h3>Stamp Duty / Transfer Tax Calculator</h3>
+        <p>UK SDLT bands with first-time buyer relief and the +5% surcharge, or US transfer taxes + closing costs.</p>
+        <span class="go">Open tool →</span>
+      </a>
+      <a class="tool-card glass glass-hover" data-cat="finance" href="mortgage-affordability.html">
+        <span class="cat">Finance</span>
+        <span class="t-ico" aria-hidden="true">🏠</span>
+        <h3>Mortgage Affordability Calculator</h3>
+        <p>How much can you borrow? UK income multiples + stress test, or US 28/36 DTI rules — with monthly payments.</p>
+        <span class="go">Open tool →</span>
+      </a>
+      <a class="tool-card glass glass-hover" data-cat="finance" href="capital-gains-tax.html">
+        <span class="cat">Finance</span>
+        <span class="t-ico" aria-hidden="true">📈</span>
+        <h3>Capital Gains Tax Calculator</h3>
+        <p>UK 18%/24% CGT with the £3,000 exempt amount, or US short vs long-term rates with the 0/15/20% brackets.</p>
+        <span class="go">Open tool →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<aside class="ad-slot" aria-label="Advertisement">
+  <div class="ad-box">
+    <!-- ADSENSE UNIT (bottom): after approval, delete the placeholder span below and
+         uncomment this ad unit, replacing the client & slot IDs with your own.
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <span>Advertisement</span>
+  </div>
+</aside>
+
+<script>
+
+function calcROI(){
+  var isUK=AMT.region()==='uk';
+  var price=AMT.num('re-price'), rent=AMT.num('re-rent'), costs=AMT.num('re-costs'), vac=AMT.num('re-vac')/100;
+  var depPct=AMT.num('re-dep')/100, rate=AMT.num('re-rate'), io=AMT.val('re-io')==='io', buyCosts=AMT.num('re-buycosts');
+  var sdlt=isUK?AMTD.ukSDLT(price,'additional'):0;
+  var cashIn=price*depPct+buyCosts+sdlt;
+  var loan=price*(1-depPct);
+  var mort=io?loan*rate/100/12:AMTD.pmt(loan,rate,300);
+  var effRent=rent*(1-vac);
+  var noiM=effRent-costs, noi=noiM*12;
+  var cashFlow=noiM-mort;
+  var grossYield=price>0?rent*12/price*100:0;
+  var capRate=price>0?noi/price*100:0;
+  var coc=cashIn>0?cashFlow*12/cashIn*100:0;
+  var onePct=price>0?rent/price*100:0;
+  var out='<div class="res-grid">'
+    +'<div class="res-card hero-val"><div class="lbl">Monthly cash flow</div><div class="val '+(cashFlow<0?'bad':'good')+'">'+(cashFlow<0?'−':'')+AMT.money(cashFlow)+'</div></div>'
+    +'<div class="res-card"><div class="lbl">Gross yield</div><div class="val">'+grossYield.toFixed(1)+'%</div></div>'
+    +'<div class="res-card"><div class="lbl">Net yield / cap rate</div><div class="val '+(capRate>=5?'good':capRate>=3.5?'warn':'bad')+'">'+capRate.toFixed(1)+'%</div></div>'
+    +'<div class="res-card"><div class="lbl">Cash-on-cash return</div><div class="val '+(coc>=6?'good':coc>=0?'warn':'bad')+'">'+coc.toFixed(1)+'%</div></div></div>'
+    +'<table class="res-table"><tbody>'
+    +'<tr><td>Cash invested (deposit + '+(isUK?'SDLT '+AMT.money(sdlt)+' + fees':'closing costs')+')</td><td>'+AMT.money(cashIn)+'</td></tr>'
+    +'<tr><td>Mortgage payment ('+(io?'interest-only':'repayment')+')</td><td>'+AMT.money(mort)+'/mo</td></tr>'
+    +'<tr><td>Effective rent after '+(vac*100).toFixed(0)+'% vacancy</td><td>'+AMT.money(effRent)+'/mo</td></tr>'
+    +'<tr><td>Net operating income (NOI)</td><td>'+AMT.money(noi)+'/yr</td></tr>'
+    +(isUK?'<tr><td>Lender stress test — rent must be ≥145% of interest at ~7%: '+AMT.money(loan*0.07/12*1.45)+'</td><td>'+(rent>=loan*0.07/12*1.45?'✅ Passes':'⚠️ May fail')+'</td></tr>':'<tr><td>1% rule — rent ÷ price</td><td>'+onePct.toFixed(2)+'% '+(onePct>=1?'✅':'⚠️ below 1%')+'</td></tr>')
+    +'</tbody></table>'
+    +'<div class="explain"><b>Reading the deal:</b> '
+    +(cashFlow<0?'this property loses '+AMT.money(-cashFlow)+' a month after the mortgage — you\'d be betting purely on price growth, which is speculation, not investment. ':'the property pays you '+AMT.money(cashFlow)+'/month after all costs. ')
+    +'Benchmarks: cap rate 5–8% is typical for solid residential deals; cash-on-cash above 6–8% rewards the leverage risk. '
+    +(isUK?'Remember UK tax: individual landlords get only a 20% credit on mortgage interest (Section 24) — run the Buy-to-Let Analyzer for the after-tax picture.':'Remember depreciation: the building (not land) depreciates over 27.5 years on Schedule E, often sheltering most of this cash flow from tax.')
+    +'</div>';
+  document.getElementById('res-roi').innerHTML=out; AMT.show('res-roi');
+}
+document.addEventListener('regionchange',function(){document.querySelectorAll('[data-sym]').forEach(function(s){s.textContent=AMT.cur();}); if(document.getElementById('res-roi').classList.contains('show')) calcROI();});
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-sym]').forEach(function(s){s.textContent=AMT.cur();});});
+
+</script>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="../index.html"><span class="logo-mark">⚡</span> AI&nbsp;Money&nbsp;Tools</a>
+        <p>Region-aware money, tax and legal calculators for the UK 🇬🇧 and USA 🇺🇸. Free to use, no sign-up, and every calculation runs privately in your browser.</p>
+      </div>
+      <div>
+        <h4>Finance tools</h4>
+        <ul>
+          <li><a href="../tools/tax-calculator.html">Income Tax Calculator</a></li>
+          <li><a href="../tools/mortgage-affordability.html">Mortgage Affordability</a></li>
+          <li><a href="../tools/retirement-planner.html">Retirement Planner</a></li>
+          <li><a href="../tools/capital-gains-tax.html">Capital Gains Tax</a></li>
+          <li><a href="../tools/debt-payoff-planner.html">Debt Payoff Planner</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <ul>
+          <li><a href="../tools/invoice-generator.html">Invoice Generator</a></li>
+          <li><a href="../tools/contract-generator.html">Contract Generator</a></li>
+          <li><a href="../tools/stamp-duty-transfer-tax.html">Stamp Duty Calculator</a></li>
+          <li><a href="../tools/budget-planner.html">Budget Planner</a></li>
+          <li><a href="../tools/freelance-rate-calculator.html">Freelance Rate Calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy-policy.html">Privacy policy</a></li>
+          <li><a href="../terms.html">Terms of use</a></li>
+          <li><a href="../disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer-strip">AI Money Tools provides general information and automated calculations only — not legal, tax, financial, investment or immigration advice. Figures are based on published 2026 UK (2026/27) and US (2025 &amp; 2026 tax year) rules and may change. Always confirm important decisions with a qualified professional in your jurisdiction.</p>
+    <div class="foot-legal">
+      <span>© 2026 AI Money Tools · aimoneytools.pro</span>
+      <span>Made for 🇬🇧 + 🇺🇸</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/taxdata.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
